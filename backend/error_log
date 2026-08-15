@@ -1,0 +1,2 @@
+[15-Aug-2026 00:35:09 UTC] [GoDeliver] DB error: SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\xC8\x99in\xC4\x83' for column `godelive_adm`.`applications`.`vehicle` at row 1
+[15-Aug-2026 00:35:16 UTC] [GoDeliver] DB error: SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect string value: '\xC8\x99in\xC4\x83' for column `godelive_adm`.`applications`.`vehicle` at row 1

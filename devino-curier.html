@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devino Curier — Aplicație GoDeliver</title>
+<meta name="description" content="Aplică acum pentru a deveni curier GoDeliver și livrează pentru Glovo, Bolt Food și Wolt. Formular rapid în 5 pași.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://godeliver.ro/devino-curier.html">
+<meta property="og:title" content="Devino Curier — Aplicație GoDeliver">
+<meta property="og:description" content="Aplică acum pentru a deveni curier GoDeliver și livrează pentru Glovo, Bolt Food și Wolt. Formular rapid în 5 pași.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/logo-full.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body class="is-loading">
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-road">
+        <svg class="preloader-scooter" viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg">
+          <g class="speed-trails">
+            <rect x="0" y="46" width="46" height="4" rx="2" fill="#FFC400" opacity="0.85"/>
+            <rect x="0" y="60" width="30" height="4" rx="2" fill="#FFC400" opacity="0.55"/>
+            <rect x="0" y="74" width="18" height="4" rx="2" fill="#FFC400" opacity="0.3"/>
+          </g>
+          <g transform="translate(50,0)">
+            <path d="M60 96 C58 80, 70 70, 86 70 L118 70 C126 70, 130 64, 138 64 L150 64" fill="none" stroke="#EDEDF0" stroke-width="6" stroke-linecap="round"/>
+            <path d="M150 64 L158 46" stroke="#EDEDF0" stroke-width="6" stroke-linecap="round"/>
+            <rect x="86" y="52" width="34" height="16" rx="8" fill="#FFC400"/>
+            <circle cx="112" cy="46" r="10" fill="#EDEDF0"/>
+            <path d="M108 40 Q112 30 120 32" stroke="#EDEDF0" stroke-width="5" stroke-linecap="round" fill="none"/>
+            <g class="wheel" style="transform-origin:64px 96px;"><circle cx="64" cy="96" r="18" fill="none" stroke="#EDEDF0" stroke-width="5"/><circle cx="64" cy="96" r="3" fill="#EDEDF0"/><line x1="64" y1="80" x2="64" y2="112" stroke="#EDEDF0" stroke-width="2"/><line x1="48" y1="96" x2="80" y2="96" stroke="#EDEDF0" stroke-width="2"/></g>
+            <g class="wheel" style="transform-origin:150px 96px;"><circle cx="150" cy="96" r="18" fill="none" stroke="#EDEDF0" stroke-width="5"/><circle cx="150" cy="96" r="3" fill="#EDEDF0"/><line x1="150" y1="80" x2="150" y2="112" stroke="#EDEDF0" stroke-width="2"/><line x1="134" y1="96" x2="166" y2="96" stroke="#EDEDF0" stroke-width="2"/></g>
+          </g>
+        </svg>
+      </div>
+      <div class="preloader-brand">
+        <span>Go</span><span class="accent">Deliver</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo-icon.png" alt="GoDeliver logo">
+        <span>GoDeliver</span>
+      </a>
+      <nav class="nav-main" id="navMain">
+        <ul style="display:flex;flex-direction:inherit;gap:inherit;align-items:inherit;list-style:none;padding:0;margin:0;">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="devino-curier.html" class="active">Devino Curier</a></li>
+          <li><a href="despre-noi.html">Despre Noi</a></li>
+          <li><a href="orase.html">Orașe</a></li>
+          <li><a href="intrebari-frecvente.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="cariere.html">Cariere</a></li>
+        </ul>
+        <div class="header-actions" style="margin-top:26px;display:flex;">
+          <a href="devino-curier.html" class="btn btn-primary btn-sm">Aplică Acum</a>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch">
+          <button class="active" type="button" data-lang="ro">RO</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <a href="devino-curier.html" class="btn btn-primary btn-sm" style="display:none" id="headerCta">Aplică Acum</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Deschide meniul">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+<main>
+  <section class="page-hero" style="padding:150px 0 50px;">
+    <div class="container">
+      <div class="eyebrow">Aplicație Curier</div>
+      <h1>Devino Curier GoDeliver</h1>
+      <p>Completează cei 5 pași de mai jos. Durează aproximativ 5 minute.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container form-shell">
+
+      <div class="progress-track" id="progressTrack">
+        <div class="progress-step active" data-step="1"><div class="circle">1</div><div class="label">Personal</div></div>
+        <div class="progress-step" data-step="2"><div class="circle">2</div><div class="label">Muncă</div></div>
+        <div class="progress-step" data-step="3"><div class="circle">3</div><div class="label">Contract</div></div>
+        <div class="progress-step" data-step="4"><div class="circle">4</div><div class="label">Documente</div></div>
+        <div class="progress-step" data-step="5"><div class="circle">5</div><div class="label">Verificare</div></div>
+      </div>
+
+      <div class="form-card">
+        <form id="applicationForm" novalidate>
+
+          <!-- STEP 1 — PERSONAL INFO -->
+          <div class="form-panel active" data-panel="1">
+            <h3>Informații Personale</h3>
+            <div class="form-row">
+              <div class="form-field"><label>Prenume *</label><input class="input" name="firstName" required></div>
+              <div class="form-field"><label>Nume *</label><input class="input" name="lastName" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-field"><label>Telefon *</label><input class="input" type="tel" name="phone" placeholder="07xx xxx xxx" required></div>
+              <div class="form-field"><label>Email *</label><input class="input" type="email" name="email" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-field"><label>Data Nașterii *</label><input class="input" type="date" name="birthDate" required></div>
+              <div class="form-field"><label>CNP *</label><input class="input" name="cnp" maxlength="13" placeholder="13 cifre" required></div>
+            </div>
+            <div class="form-field"><label>Adresă *</label><input class="input" name="address" required></div>
+            <div class="form-row">
+              <div class="form-field"><label>Contact de Urgență — Nume *</label><input class="input" name="emergencyName" required></div>
+              <div class="form-field"><label>Contact de Urgență — Telefon *</label><input class="input" type="tel" name="emergencyPhone" required></div>
+            </div>
+            <div class="form-nav">
+              <span></span>
+              <button type="button" class="btn btn-primary" data-next>Continuă →</button>
+            </div>
+          </div>
+
+          <!-- STEP 2 — WORK INFO -->
+          <div class="form-panel" data-panel="2">
+            <h3>Informații de Muncă</h3>
+            <div class="form-row">
+              <div class="form-field"><label>Oraș *</label>
+                <select name="city" required>
+                  <option value="">Alege orașul</option>
+                  <option>București</option><option>Cluj-Napoca</option><option>Timișoara</option>
+                  <option>Iași</option><option>Constanța</option><option>Craiova</option>
+                  <option>Brașov</option><option>Alt oraș</option>
+                </select>
+              </div>
+              <div class="form-field"><label>Experiență Anterioară</label>
+                <select name="experience">
+                  <option value="none">Fără experiență</option>
+                  <option value="lt1">Sub 1 an</option>
+                  <option value="1-3">1–3 ani</option>
+                  <option value="3+">Peste 3 ani</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Platformă Preferată *</label>
+              <div class="choice-grid" data-choice-group="platform">
+                <label class="choice-card"><input type="radio" name="platform" value="Glovo" required><span>Glovo</span></label>
+                <label class="choice-card"><input type="radio" name="platform" value="Bolt Food"><span>Bolt Food</span></label>
+                <label class="choice-card"><input type="radio" name="platform" value="Wolt"><span>Wolt</span></label>
+                <label class="choice-card"><input type="radio" name="platform" value="Toate"><span>Toate</span></label>
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Vehicul *</label>
+              <div class="choice-grid" data-choice-group="vehicle">
+                <label class="choice-card"><input type="radio" name="vehicle" value="Bicicletă" required><span>🚲 Bicicletă</span></label>
+                <label class="choice-card"><input type="radio" name="vehicle" value="Scuter"><span>🛵 Scuter</span></label>
+                <label class="choice-card"><input type="radio" name="vehicle" value="Mașină"><span>🚗 Mașină</span></label>
+              </div>
+            </div>
+            <div class="form-field">
+              <label>Disponibilitate *</label>
+              <div class="choice-grid" data-choice-group="availability">
+                <label class="choice-card"><input type="radio" name="availability" value="Full-time" required><span>Full-time</span></label>
+                <label class="choice-card"><input type="radio" name="availability" value="Part-time"><span>Part-time</span></label>
+                <label class="choice-card"><input type="radio" name="availability" value="Weekend"><span>Weekend</span></label>
+              </div>
+            </div>
+            <div class="form-field"><label>Limbi Vorbite</label><input class="input" name="languages" placeholder="Română, Engleză..."></div>
+            <div class="form-nav">
+              <button type="button" class="btn btn-ghost" data-prev>← Înapoi</button>
+              <button type="button" class="btn btn-primary" data-next>Continuă →</button>
+            </div>
+          </div>
+
+          <!-- STEP 3 — CONTRACT TYPE -->
+          <div class="form-panel" data-panel="3">
+            <h3>Tip de Contract</h3>
+            <p style="margin-bottom:22px;">Alege forma de colaborare care ți se potrivește. Poți schimba tipul de contract ulterior, discutând cu echipa GoDeliver.</p>
+            <div class="form-field">
+              <div class="choice-grid" style="grid-template-columns:repeat(2,1fr);" data-choice-group="contract">
+                <label class="choice-card" style="text-align:left;padding:20px;"><input type="radio" name="contractType" value="Angajare" required><strong>Angajare</strong><p style="margin:6px 0 0;font-size:12.5px;">Contract individual de muncă, cu toate beneficiile aferente.</p></label>
+                <label class="choice-card" style="text-align:left;padding:20px;"><input type="radio" name="contractType" value="PFA"><strong>PFA</strong><p style="margin:6px 0 0;font-size:12.5px;">Colaborare ca persoană fizică autorizată.</p></label>
+                <label class="choice-card" style="text-align:left;padding:20px;"><input type="radio" name="contractType" value="SRL"><strong>SRL</strong><p style="margin:6px 0 0;font-size:12.5px;">Colaborare prin firma ta (SRL propriu).</p></label>
+                <label class="choice-card" style="text-align:left;padding:20px;"><input type="radio" name="contractType" value="Colaborare"><strong>Colaborare</strong><p style="margin:6px 0 0;font-size:12.5px;">Contract de colaborare simplă, flexibil.</p></label>
+              </div>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn btn-ghost" data-prev>← Înapoi</button>
+              <button type="button" class="btn btn-primary" data-next>Continuă →</button>
+            </div>
+          </div>
+
+          <!-- STEP 4 — UPLOADS -->
+          <div class="form-panel" data-panel="4">
+            <h3>Documente</h3>
+            <p style="margin-bottom:22px;">Acceptăm fișiere JPG, PNG sau PDF, sub 10MB fiecare.</p>
+            <div class="upload-grid">
+              <div class="form-field">
+                <label>Carte de Identitate *</label>
+                <div class="upload-box"><input type="file" name="docId" accept=".jpg,.jpeg,.png,.pdf" required><span>📄 Trage fișierul aici sau click pentru upload</span><div class="name"></div></div>
+              </div>
+              <div class="form-field">
+                <label>Permis de Conducere</label>
+                <div class="upload-box"><input type="file" name="docLicense" accept=".jpg,.jpeg,.png,.pdf"><span>📄 Trage fișierul aici sau click pentru upload</span><div class="name"></div></div>
+              </div>
+              <div class="form-field">
+                <label>Talon Vehicul</label>
+                <div class="upload-box"><input type="file" name="docRegistration" accept=".jpg,.jpeg,.png,.pdf"><span>📄 Trage fișierul aici sau click pentru upload</span><div class="name"></div></div>
+              </div>
+              <div class="form-field">
+                <label>Asigurare (RCA)</label>
+                <div class="upload-box"><input type="file" name="docInsurance" accept=".jpg,.jpeg,.png,.pdf"><span>📄 Trage fișierul aici sau click pentru upload</span><div class="name"></div></div>
+              </div>
+              <div class="form-field">
+                <label>Dovadă IBAN *</label>
+                <div class="upload-box"><input type="file" name="docIban" accept=".jpg,.jpeg,.png,.pdf" required><span>📄 Trage fișierul aici sau click pentru upload</span><div class="name"></div></div>
+              </div>
+              <div class="form-field">
+                <label>Selfie cu Actul de Identitate *</label>
+                <div class="upload-box"><input type="file" name="docSelfie" accept=".jpg,.jpeg,.png" required><span>🤳 Trage fișierul aici sau click pentru upload</span><div class="name"></div></div>
+              </div>
+            </div>
+            <div class="form-field">
+              <label>CV (opțional)</label>
+              <div class="upload-box"><input type="file" name="docCv" accept=".pdf,.doc,.docx"><span>📄 Trage fișierul aici sau click pentru upload</span><div class="name"></div></div>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn btn-ghost" data-prev>← Înapoi</button>
+              <button type="button" class="btn btn-primary" data-next>Continuă →</button>
+            </div>
+          </div>
+
+          <!-- STEP 5 — REVIEW & SIGNATURE -->
+          <div class="form-panel" data-panel="5">
+            <h3>Verificare și Semnătură</h3>
+            <div id="reviewContainer"></div>
+
+            <div class="form-field">
+              <label>Semnătură Digitală *</label>
+              <canvas class="signature-pad" id="signaturePad" width="700" height="180"></canvas>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;">
+                <span class="hint">Semnează cu mouse-ul sau degetul (pe mobil)</span>
+                <button type="button" class="btn btn-ghost btn-sm" id="clearSignature">Șterge</button>
+              </div>
+            </div>
+
+            <div class="checkbox-row" style="margin-top:20px;">
+              <input type="checkbox" id="acceptTerms" required>
+              <label for="acceptTerms">Am citit și sunt de acord cu <a href="termeni.html" style="color:var(--gold)">Termenii și Condițiile</a> și <a href="confidentialitate.html" style="color:var(--gold)">Politica de Confidențialitate</a>. *</label>
+            </div>
+
+            <div class="form-nav">
+              <button type="button" class="btn btn-ghost" data-prev>← Înapoi</button>
+              <button type="submit" class="btn btn-primary" id="submitBtn">Trimite Aplicația</button>
+            </div>
+          </div>
+
+          <!-- SUCCESS STATE -->
+          <div class="form-panel" data-panel="success">
+            <div class="form-success">
+              <div class="check">✓</div>
+              <h3>Aplicația a fost trimisă cu succes!</h3>
+              <p>Îți vom trimite un email de confirmare și te vom contacta în maximum 48 de ore.</p>
+              <span class="app-id" id="appIdDisplay">GD-000000</span>
+              <div style="margin-top:30px;">
+                <a href="index.html" class="btn btn-ghost">Înapoi Acasă</a>
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" style="margin-bottom:16px;">
+            <img src="assets/images/logo-icon.png" alt="GoDeliver logo">
+            <span>GoDeliver</span>
+          </a>
+          <p>Platforma prin care curierii din România livrează pentru Glovo, Bolt Food și Wolt — plăți săptămânale, comision minim, suport real 24/7.</p>
+          <div class="footer-social">
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+            <a href="https://wa.me/40700000000" target="_blank" rel="noopener" aria-label="WhatsApp">wa</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Companie</h4>
+          <a href="despre-noi.html">Despre Noi</a>
+          <a href="orase.html">Orașe</a>
+          <a href="blog.html">Blog</a>
+          <a href="cariere.html">Cariere</a>
+        </div>
+        <div class="footer-col">
+          <h4>Curieri</h4>
+          <a href="devino-curier.html">Devino Curier</a>
+          <a href="intrebari-frecvente.html">Întrebări Frecvente</a>
+          <a href="portal/login.php">Portal Curier</a>
+          <a href="contact.html">Suport</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="confidentialitate.html">Confidențialitate</a>
+          <a href="termeni.html">Termeni și Condiții</a>
+          <a href="gdpr.html">GDPR</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:+40700000000">+40 700 000 000</a>
+          <a href="mailto:contact@godeliver.ro">contact@godeliver.ro</a>
+          <span style="display:block;font-size:13px;color:var(--text-muted);line-height:1.5;">CIORGOVEAN LIVIU FLORIN PFA<br>CUI 48540021 · Colaborare 100% remote</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year></span> GoDeliver. Toate drepturile rezervate.</p>
+        <div class="footer-legal">
+          <a href="confidentialitate.html">Confidențialitate</a>
+          <a href="termeni.html">Termeni</a>
+          <a href="gdpr.html">GDPR</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cookie-banner">
+    <p>Folosim cookie-uri pentru a-ți oferi cea mai bună experiență pe site. Poți afla mai multe în <a href="cookies.html" style="color:var(--gold)">Politica de Cookies</a>.</p>
+    <div class="cookie-actions">
+      <button class="btn btn-ghost btn-sm" type="button" data-cookie="essential">Doar Esențiale</button>
+      <button class="btn btn-primary btn-sm" type="button" data-cookie="all">Accept Tot</button>
+    </div>
+  </div>
+  <button class="back-to-top" aria-label="Înapoi sus">↑</button>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/application-form.js"></script>
+</body>
+</html>
