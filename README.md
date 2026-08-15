@@ -135,9 +135,3 @@ capabilități tehnice:
 - **SMS-uri reale** — nu există provider conectat; structura de notificări e gata,
   doar cheile API lipsesc
 
-## Notă despre securitate
-
-Fișierul `backend/config.php` conține acum credențialele reale ale bazei tale de
-date. Nu-l face public (deja e blocat implicit, fiind în afara webroot-ului vizibil
-prin `.htaccess`-urile din `backend/uploads/`), dar evită să-l urci într-un
-repository public fără să-l cureți de credențiale.
